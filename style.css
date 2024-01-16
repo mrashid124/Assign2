@@ -8,7 +8,7 @@
     background-color: bisque;
 }
 .topbar-container{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     min-height: 15px;
  
     display: flex;
@@ -39,7 +39,24 @@
     align-items:center;
     padding: 10px;
 }
-.home-link a{
+.home-link{
     color:  #FF5400;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:600px)
+{
+    .topbar-container{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .items-links{
+        flex-direction: column;
+    }
 
 }
